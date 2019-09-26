@@ -1006,8 +1006,8 @@ namespace BlockEngine
                         foreach (EffectPass pass in effect.CurrentTechnique.Passes)
                         {
                             pass.Apply();
-                            //base.GraphicsDevice.DrawInstancedPrimitives(PrimitiveType.TriangleList, 0, meshPart.StartIndex, meshPart.PrimitiveCount, this.CountForBT[i]);
-                            base.GraphicsDevice.DrawInstancedPrimitives(PrimitiveType.TriangleList, 0, 0, meshPart.NumVertices, meshPart.StartIndex, meshPart.PrimitiveCount, this.CountForBT[i]);
+                            base.GraphicsDevice.DrawInstancedPrimitives(PrimitiveType.TriangleList, 0, meshPart.StartIndex, meshPart.PrimitiveCount, this.CountForBT[i]);
+                            // base.GraphicsDevice.DrawInstancedPrimitives(PrimitiveType.TriangleList, 0, 0, meshPart.NumVertices, meshPart.StartIndex, meshPart.PrimitiveCount, this.CountForBT[i]);
                         }
 
                     }
