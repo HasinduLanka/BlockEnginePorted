@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d100aa29-d6d0-4d7f-8d7a-a20aa5d3ecb3</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>BlockEngine.core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Actions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AIs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AITargetMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Arrow.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Axis.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Biome.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BiomeList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Block.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BlockType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Board.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BVector3.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Direction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)eCollitionHierarchy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)eCollitionNode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Entity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntityRelationMode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntityType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EntityTypes.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ePAnimation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ePAnimationChain.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ePart.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FrmHUI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FrmLog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FrmMenu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FrmSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Funcs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GameType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Ground.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)HeightMap.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Human.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IntVector3.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Loader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Main.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Physics.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PhysicsFuncs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RacingCameraAngle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RewardSet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RewardSetMultiplier.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Stack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Struct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Tool.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FrmHUI.resx" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FrmLog.resx" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FrmMenu.resx" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)FrmSettings.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="E:\CodeProjects\BlockEngine\BEDev\BlockEngine\BlockEngine.core\FrmHUI.resx">
+      <DependentUpon>FrmHUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="E:\CodeProjects\BlockEngine\BEDev\BlockEngine\BlockEngine.core\FrmLog.resx">
+      <DependentUpon>FrmLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="E:\CodeProjects\BlockEngine\BEDev\BlockEngine\BlockEngine.core\FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="E:\CodeProjects\BlockEngine\BEDev\BlockEngine\BlockEngine.core\FrmSettings.resx">
+      <DependentUpon>FrmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
